@@ -1,7 +1,7 @@
 import React from "react";
 import { useTable } from "react-table";
 import { makeStyles } from "@material-ui/core/styles";
-import "./SurveysTable.css";
+import "./Table.css";
 
 const useStyles = makeStyles({
   table: {

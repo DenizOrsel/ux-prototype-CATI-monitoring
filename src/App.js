@@ -7,30 +7,26 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@material-ui/core/styles";
 import SurveysTable from "./components/SurveysTable";
 import Card from "./components/Card";
-import Card2 from "./components/Card2";
 import Connections from "./components/Connections";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#02a79c", // This is the teal color
+      main: "#02a79c", // This is the teal color tone
     },
   },
 });
 
 function App() {
-
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-      <div className="card-containerX">
-        <Card>
+        <Card title="Surveys">
           <SurveysTable />
         </Card>
-        <Card2>
+        <Card title="Connections">
           <Connections />
-        </Card2>
-      </div>
+        </Card>
     </ThemeProvider>
   );
 }

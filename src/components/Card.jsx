@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Card.css";
 
-const Card = ({ children }) => {
+const Card = (props) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const handleClick = () => {
@@ -10,11 +10,13 @@ const Card = ({ children }) => {
 
   return (
     <div className="card-container">
-      <div className="card-header" onClick={handleClick}>
-        <span className="header-label">Surveys</span>
-        <span className="collapse-icon">{isOpen ? "-" : "+"}</span>
+      <div className="card-header">
+        <span className="header-label">{props.title}</span>
+        <span className="collapse-icon" onClick={handleClick}>
+          {isOpen ? "-" : "+"}
+        </span>
       </div>
-      {isOpen && <div className="card-content">{children}</div>}
+      {isOpen && <div className="card-content">{props.children}</div>}
     </div>
   );
 };
