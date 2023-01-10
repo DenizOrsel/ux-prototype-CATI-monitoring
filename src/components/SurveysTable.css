@@ -1,0 +1,28 @@
+/* Add some padding and spacing to the table cells */
+td, th {
+  padding: 12px;
+}
+
+/* Add some spacing between the table cells */
+td, th {
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+/* Add some hover effect to the rows */
+tbody tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+/* Add some styling to the table headers */
+thead th {
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+  border-right: 1px solid rgb(223, 223, 223);
+}
+
+/* Add some additional styling to the table */
+table {
+  border-collapse: collapse;
+  margin: 8px;
+}

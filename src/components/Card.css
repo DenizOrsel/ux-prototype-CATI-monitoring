@@ -1,0 +1,32 @@
+.card-container {
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: 1rem;
+  display: inline-block;
+}
+
+.card-header {
+  background-color: #f3f4f6;
+  padding: 16px;
+  font-family: Roboto;
+}
+
+.header-label {
+  color: #333;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 4px;
+}
+
+.collapse-icon {
+  float: right;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  color:rgba(0, 0, 0, 0.5)
+}
