@@ -26,7 +26,7 @@ function SurveysTable() {
       },
       {
         surveyName: "Survey 2",
-        status: "Paused",
+        status: "Stopped",
         interviewers: "0",
         Successful: "1",
         Target: "100",

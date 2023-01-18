@@ -24,7 +24,7 @@ function App() {
         <Card title="Surveys">
           <SurveysTable />
         </Card>
-        <Card title="Connections">
+        <Card title="Interviewers">
           <Connections />
         </Card>
     </ThemeProvider>
