@@ -32,10 +32,6 @@ function Connections() {
   const columns = React.useMemo(
     () => [
       {
-        Header: "Id",
-        accessor: "interviewer",
-      },
-      {
         Header: "Name",
         accessor: "name",
       },
